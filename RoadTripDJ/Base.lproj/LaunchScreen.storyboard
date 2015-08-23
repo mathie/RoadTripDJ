@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="tFp-Sb-2vg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1EA-gB-LZI"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Road Trip DJ" id="keG-tj-C75"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="60P-vY-oad">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fhe-DM-Yja"/>
+                                </constraints>
+                                <items/>
+                            </toolbar>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="60P-vY-oad" secondAttribute="bottom" id="5qu-9N-yLy"/>
+                            <constraint firstAttribute="trailing" secondItem="60P-vY-oad" secondAttribute="trailing" id="CnN-n5-Awf"/>
+                            <constraint firstItem="60P-vY-oad" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XUF-sw-OrO"/>
+                            <constraint firstItem="tFp-Sb-2vg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jAe-ao-avh"/>
+                            <constraint firstAttribute="trailing" secondItem="tFp-Sb-2vg" secondAttribute="trailing" id="m23-aa-v8A"/>
+                            <constraint firstItem="tFp-Sb-2vg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="o0q-Tc-3dC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
