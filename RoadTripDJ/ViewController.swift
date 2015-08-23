@@ -11,6 +11,8 @@ import MediaPlayer
 
 class ViewController: UIViewController, MPMediaPickerControllerDelegate {
 
+    var playlist: MPMediaItemCollection = MPMediaItemCollection(items: [])
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +30,17 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
 
     func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         print("mediaPicker:\(mediaPicker) didPickMediaItems:\(mediaItemCollection)")
+
+        let items = playlist.items + mediaItemCollection.items
+        playlist = MPMediaItemCollection(items: items)
+        
+        var index = 0
+        for item in playlist.items {
+            index += 1
+            print("\(index): \(item.artist) - \(item.title)")
+        }
+
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     func mediaPickerDidCancel(mediaPicker: MPMediaPickerController) {
