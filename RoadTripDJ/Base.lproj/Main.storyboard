@@ -43,7 +43,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Road Trip DJ" id="Xvr-XB-Rpn">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CxS-Nr-da3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CxS-Nr-da3">
+                            <connections>
+                                <action selector="addMusic:" destination="BYZ-38-t0r" id="3In-0q-rhE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
