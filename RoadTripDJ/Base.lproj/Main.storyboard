@@ -16,25 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-s0-t2G">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-s0-t2G" customClass="PlayerBar" customModule="RoadTripDJ" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="beO-GV-VXK"/>
                                 </constraints>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="j5O-An-8e4"/>
-                                    <barButtonItem systemItem="rewind" id="lFl-FG-ETu"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="VOW-pR-BMZ"/>
-                                    <barButtonItem systemItem="play" id="8SN-n9-AMV">
-                                        <connections>
-                                            <action selector="playPause:" destination="BYZ-38-t0r" id="OWE-E3-Gd7"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="jer-vy-WXJ"/>
-                                    <barButtonItem systemItem="fastForward" id="hlu-8N-tZY"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="t6a-VG-v5B"/>
-                                </items>
+                                <items/>
                                 <color key="tintColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                         </subviews>

@@ -24,8 +24,10 @@ class ViewController: UIViewController {
     private func togglePlayPause() {
         switch(player.playbackState) {
         case .Playing:
+            print("Pausing")
             player.pause()
         default:
+            print("Playing")
             player.play()
         }
         
