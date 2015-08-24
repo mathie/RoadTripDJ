@@ -9,7 +9,7 @@
 import UIKit
 import MediaPlayer
 
-class ViewController: UIViewController, MPMediaPickerControllerDelegate {
+class ViewController: UIViewController {
 
     var playlist: MPMediaItemCollection = MPMediaItemCollection(items: [])
 
@@ -28,6 +28,9 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         presentViewController(mediaPicker, animated: true, completion: nil)
     }
 
+}
+
+extension ViewController : MPMediaPickerControllerDelegate {
     func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         print("mediaPicker:\(mediaPicker) didPickMediaItems:\(mediaItemCollection)")
 
